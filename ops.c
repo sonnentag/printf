@@ -67,7 +67,7 @@ int s_i(va_list i)
 
 	n = va_arg(i, int);
 	count = 0;
-	m = 1000000000000; /* Max digit */
+	m = 1000000000; /* Max digit */
 	a[0] = n / m;
 	for (b = 1; b < 10; b++) /* iterating through number 0-9 */
 	{
@@ -105,7 +105,7 @@ int s_d(va_list d)
 
 	n = va_arg(d, int);
 	count = 0;
-	m = 1000000000000;
+	m = 1000000000;
 	a[0] = n / m;
 	for (b = 1; b < 10; b++)
 	{
