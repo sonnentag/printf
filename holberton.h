@@ -23,8 +23,8 @@ int (*get_spec(char s))(va_list);
 
 int s_c(va_list args);
 int s_s(va_list args);
-int s_i(va_list args);
-int s_d(va_list args);
+int s_i(va_list i);
+int s_d(va_list d);
 int s_z(va_list args);
 
 int _putchar(char);
