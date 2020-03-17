@@ -3,7 +3,7 @@
 
 #include <stdarg.h>
 
-#define UNUSED(x) (void)(x);
+#define UNUSED(x) (void)(x)
 
 /**
  * struct specs - typedef struct specs and spec_t
