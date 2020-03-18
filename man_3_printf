@@ -1,0 +1,20 @@
+.TH  "17 March 2020" "1.0" "_printf man page"
+.SH NAME
+.B _printf
+- Formatted output conversion.
+.SH SYNOPSIS
+.B #include "holberton.h"
+
+.B int _printf(const char *
+.I format
+.B , ...)
+.SH DESCRIPTION
+.B _printf()
+Prints to standard output as a 
+.I format
+string that specifies how subsequent args are converted for output. 
+.SH Return value
+On successful return. Functions return the number of characters printed, excluding null byte (NULL) used to end output to strings.
+
+If an error is encountered, a negative value is returned as the output.
+.SH Conversion specifiier
