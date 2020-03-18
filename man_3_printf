@@ -1,4 +1,4 @@
-.TH  "17 March 2020" "1.0" "_printf man page"
+.TH  _printf 3 2020-03-17 HBTN
 .SH NAME
 .B _printf
 - Formatted output conversion.
@@ -10,11 +10,33 @@
 .B , ...)
 .SH DESCRIPTION
 .B _printf()
-Prints to standard output as a 
+prints to standard output as a 
 .I format
 string that specifies how subsequent args are converted for output. 
-.SH Return value
+.SS Conversion specifiier
+A character that specifies the type of conversion to be applied.  The conversion specifiers and their meanings are:
+.TP
+.B d, i   
+The int argument is converted to signed decimal notation. 
+
+.TP
+.B c      
+The int argument is converted to an unsigned char, and the resulting character is written.
+
+.TP
+.B s      
+The const char * argument is expected to be a pointer to an array of character type (pointer to a string).  Characters from the array are writ‐ ten up to (but not including) a terminating null byte ('\0').
+
+.SH RETURN VALUE
 On successful return. Functions return the number of characters printed, excluding null byte (NULL) used to end output to strings.
 
 If an error is encountered, a negative value is returned as the output.
-.SH Conversion specifiier
+
+.SH EXAMPLE
+_printf("String:[%s]\n", "I am a string !");	
+
+.SH SEE ALSO
+.RB " "holberton "(2)
+
+.SH COLOPHON
+This  page  is  created  by Tommy Kim and Tony Sims for Holberton School Tulsa's cohort 11 printf project.
