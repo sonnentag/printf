@@ -39,12 +39,15 @@ int s_c(va_list args)
 int s_s(va_list args)
 {
 	unsigned int c;
-	char *s;
+	const char *s;
 
-	s = va_arg(args, char *);
+	s = va_arg(args, const char *);
 	c = 0;
-	if (!s)
-		s = "(null)";
+	if (s == NULL)
+	{
+		_printf("(null)");
+		return (-1);
+	}
 	while (s[c] != '\0')
 	{
 		_putchar(s[c]);
