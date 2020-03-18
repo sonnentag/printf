@@ -39,9 +39,9 @@ int s_c(va_list args)
 int s_s(va_list args)
 {
 	unsigned int c;
-	const char *s;
+	char *s;
 
-	s = va_arg(args, const char *);
+	s = va_arg(args, char *);
 	c = 0;
 	if (s == NULL)
 	{
