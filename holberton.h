@@ -19,7 +19,7 @@ typedef struct specs
 
 int _printf(const char *format, ...);
 
-int (*get_spec(char s))(va_list);
+int get_spec(char s, va_list args);
 
 int s_c(va_list args);
 int s_s(va_list args);
